@@ -10,7 +10,7 @@ bot = Bot(TOKEN)
 print(bot.get_me())
 
 def start(update:Update, context:CallbackContext):
-    update.message.reply_text("hii i am jokify bot, if you are having bad day, I'll try to make laugh with my jokes just give /joke command for jokes and /help for any kind of help")
+    update.message.reply_text("hii i am jokify bot, if you are having bad day, I'll try to make you laugh with my jokes and cheer your mood just give /joke command for jokes and /help for any kind of help")
 
 def joke(update:Update, context:CallbackContext):
     joke = pyjokes.get_joke()
